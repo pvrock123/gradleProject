@@ -26,7 +26,7 @@ steps:
   displayName: 'Copy Files to artifact staging directory'
   inputs:
     SourceFolder: '$(System.DefaultWorkingDirectory)'
-    Contents: '**/gradle/wrapper*.?(war|jar)'
+    Contents: '**/gradle/wrapper/*.?(war|jar)'
     TargetFolder: $(Build.ArtifactStagingDirectory)
 
 - upload: $(Build.ArtifactStagingDirectory)
