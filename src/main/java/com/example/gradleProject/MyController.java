@@ -11,4 +11,8 @@ public class MyController {
     public ResponseEntity<String> welcomeUser(){
         return new ResponseEntity<String>("welcome",HttpStatus.OK);
     }
+    @GetMapping("/user")
+    public ResponseEntity<String> User(){
+        return new ResponseEntity<String>("welcome user",HttpStatus.OK);
+    }
 }
