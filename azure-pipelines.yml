@@ -26,7 +26,7 @@ steps:
   displayName: 'Copy Files to artifact staging directory'
   inputs:
     SourceFolder: '$(System.DefaultWorkingDirectory)'
-    Contents: '**/build/libs/*.jar'
+    Contents: '**/build/libs/*.war'
     TargetFolder: $(Build.ArtifactStagingDirectory)
 
 - upload: $(Build.ArtifactStagingDirectory)
