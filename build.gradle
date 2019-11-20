@@ -12,7 +12,7 @@ plugins {
 	id 'java'
 }
 group = 'com.example'
-version = '0.0.1-SNAPSHOT'
+version = ''
 sourceCompatibility = '1.8'
 
 repositories {
@@ -20,7 +20,7 @@ repositories {
 }
 
 bootJar {
-	baseName = 'gradleapp'
+	baseName = 'app'
 }
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
