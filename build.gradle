@@ -10,7 +10,6 @@ plugins {
 	id 'org.springframework.boot' version '2.2.1.RELEASE'
 	id 'io.spring.dependency-management' version '1.0.8.RELEASE'
 	id 'java'
-    id 'war'
 }
 group = 'com.example'
 version = '0.0.1-SNAPSHOT'
@@ -20,7 +19,7 @@ repositories {
 	mavenCentral()
 }
 
-bootWar {
+bootJar {
 	baseName = 'gradleapp'
 }
 dependencies {
